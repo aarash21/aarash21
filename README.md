@@ -1,4 +1,13 @@
 ### Hi there 👋
+<h1 align="center">Hi 👋, I'm Aarash Mehta</h1>
+<h3 align="center"> I’m passionate about gaining more knowledge and a keen learner , I always try to develop my skills through all the opportunities I get </h3>
+
+- 🔭 I’m in my 1st year in Btech CSE course in UPES, Dehradun.
+- 🌱 I’m presently learning  CSE
+- 💬My hobbies are watching and playing cricket
+
+- ⚡ Fun fact about me :   I observe everything around me 
+
 
 <!--
 **aarash21/aarash21** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
