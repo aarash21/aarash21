@@ -1,0 +1,182 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyM/p9AVb1g75WwmoMW6dhcr",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/aarash21/aarash21/blob/main/13.02.2024\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 5,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oYL0gFM_ll2B",
+        "outputId": "3f4b55b8-d84c-4266-e4fa-bdbb3ed3a90c"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[2, 4, 6, 8]\n"
+          ]
+        }
+      ],
+      "source": [
+        "list_1 = [2,3,4,5,6,7,8]\n",
+        "evens = list(filter(lambda n:n%2==0,list_1))\n",
+        "\n",
+        "print(evens)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list_1 = [2,3,4,5,6,7,8]\n",
+        "evens = list(filter(lambda n:n%2==0,list_1))\n",
+        "\n",
+        "print(evens)\n",
+        "\n",
+        "operation_1 = list(map(lambda n:n*2,evens))\n",
+        "print(operation_1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lp1m1zBNqeLl",
+        "outputId": "656f134b-01a9-4913-ec3b-628b23b6be7a"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[2, 4, 6, 8]\n",
+            "[4, 8, 12, 16]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list_1 = [2,3,4,5,6,7,8]\n",
+        "evens = list(filter(lambda n:n%2==0,list_1))\n",
+        "\n",
+        "print(evens)\n",
+        "\n",
+        "operation_1 = list(map(lambda n:n*2,evens))\n",
+        "print(operation_1)\n",
+        "\n",
+        "from functools import reduce\n",
+        "operation_2 = reduce(lambda a,b:a+b, operation_1)\n",
+        "print(operation_2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jhCa7QP7snIB",
+        "outputId": "0ee98306-5e3a-44b4-fbf0-bd42600f23ff"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[2, 4, 6, 8]\n",
+            "[4, 8, 12, 16]\n",
+            "40\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**WRITE A PROGRAM TO EXTRACT EVEN AND ODD NUMBERS FOR THE LIST**"
+      ],
+      "metadata": {
+        "id": "6lk06FZttTwq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list_1 = [2,3,4,5,6,7,8]\n",
+        "odds = list(filter(lambda n:n%2==1,list_1))\n",
+        "evens = list(filter(lambda n:n%2==0,list_1))\n",
+        "\n",
+        "print(\"odd numbers are\", odds)\n",
+        "print(evens)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HztHO3mWtc0L",
+        "outputId": "c7bde211-6e3a-4787-b169-1c83c74c9d6d"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[3, 5, 7]\n",
+            "[2, 4, 6, 8]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def count(list_1)\n",
+        "  ev=0\n",
+        "  od=0\n",
+        "  for i in list_1:\n",
+        "    if i%2==0\n",
+        "      ev=ev+1\n",
+        "    else\n",
+        "      od=od+1\n",
+        "  return ev,od\n",
+        "list_1=[1,2,3,4,5,6,7,8,9,10]\n",
+        "even,odd=count(list_1)\n",
+        "print(even,odd)"
+      ],
+      "metadata": {
+        "id": "1gq7nZo0u1Wb"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
